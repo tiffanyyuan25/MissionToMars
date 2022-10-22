@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public class Cabbage : Food
+{
+}
+
+/**
 public class Cabbage : MonoBehaviour, IInteractable
 {
 [SerializeField] private string _prompt;
@@ -14,3 +19,4 @@ public class Cabbage : MonoBehaviour, IInteractable
         return true;
     }
 }
+**/

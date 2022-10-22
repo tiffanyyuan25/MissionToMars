@@ -9,7 +9,11 @@ public class Interactor : MonoBehaviour
     [SerializeField] private float _interactionPointRadius = 0.5f;
     [SerializeField] private LayerMask _interactableMask;
 
+    private ResourceHolder resourceHolder;
+    public ResourceHolder ResourceHolder => resourceHolder;
+
     private readonly Collider[] _colliders = new Collider[3];
+
     [SerializeField] private int _numFound;
 
     // Update is called once per frame
@@ -24,6 +28,8 @@ public class Interactor : MonoBehaviour
 
             if (_interactable != null && Keyboard.current.iKey.wasPressedThisFrame)
             {
+                Debug.Log("Interact with Object");
+                resourceHolder = GetComponent<ResourceHolder>();
                 _interactable.Interact(this);
             }
         }
