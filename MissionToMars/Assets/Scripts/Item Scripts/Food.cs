@@ -12,12 +12,10 @@ public class Food : MonoBehaviour, IInteractable
     public bool Interact(Interactor interactor)
     {
         var resource = interactor.ResourceHolder;
-        Debug.Log("Got the food" + resource);
         if (!resource) return false;
 
         if (resource.ResourceSystem.AddToResources(ItemData, 1))
         {
-            Debug.Log("Attempting to destroy");
             Destroy(this.gameObject);
         }
 

@@ -29,6 +29,12 @@ public class ResourceSlot
       numItems = (-1);
    }
 
+   public void UpdateResourceSlot(ResourceItemData data, int amount)
+   {
+      itemData = data;
+      numItems = amount;
+   }
+
    public void AddToStack(int amount)
    {
       numItems += amount;

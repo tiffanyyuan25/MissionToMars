@@ -28,7 +28,6 @@ public class Interactor : MonoBehaviour
 
             if (_interactable != null && Keyboard.current.iKey.wasPressedThisFrame)
             {
-                Debug.Log("Interact with Object");
                 resourceHolder = GetComponent<ResourceHolder>();
                 _interactable.Interact(this);
             }

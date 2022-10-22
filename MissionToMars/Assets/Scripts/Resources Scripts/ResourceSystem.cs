@@ -26,7 +26,39 @@ public class ResourceSystem
 
     public bool AddToResources(ResourceItemData itemToAdd, int amountToAdd)
     {
-        resourceSlots[0] = new ResourceSlot(itemToAdd, amountToAdd);
-        return true;
+        if (ContainsItem(itemToAdd, out ResourceSlot resSlot))
+        {
+            resSlot.AddToStack(amountToAdd);
+            OnResourceSlotChanged?.Invoke(resSlot);
+            return true;
+        }
+        
+        if (HasFreeSlot(out ResourceSlot freeSlot))
+        {
+            freeSlot.UpdateResourceSlot(itemToAdd, amountToAdd);
+            OnResourceSlotChanged?.Invoke(freeSlot);
+            return true;
+        }
+        return false;
+    }
+
+    public bool ContainsItem(ResourceItemData itemToAdd, out ResourceSlot resSlot)
+    {
+        var resSlots = ResourceSlots.Where(i => i.ItemData == itemToAdd).ToList();
+        
+        if (resSlots.Count >= 1)
+        {
+            resSlot = resSlots[0];
+            return true;
+        }
+
+        resSlot = null;
+        return false;
+    }
+
+    public bool HasFreeSlot(out ResourceSlot freeSlot)
+    {
+        freeSlot = ResourceSlots.FirstOrDefault(i => i.ItemData == null);
+        return freeSlot == null ? false : true;
     }
 }
