@@ -1,18 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
-public class NewBehaviourScript : MonoBehaviour
+
+public class MouseItemData : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   public Image ItemSprite;
+   public TextMeshProUGUI ItemCount;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public void Awake()
+   {
+      ItemSprite.color = Color.clear;
+      ItemCount.text = "";
+   }
 }
