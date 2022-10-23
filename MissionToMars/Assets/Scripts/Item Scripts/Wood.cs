@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Food : MonoBehaviour, IInteractable
+public class Wood : MonoBehaviour, IInteractable
 {
     public ResourceItemData ItemData;
     [SerializeField] private string _prompt;
