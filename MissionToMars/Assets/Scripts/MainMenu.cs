@@ -7,36 +7,32 @@ public class MainMenu : MonoBehaviour
 {
 
     public string firstLevel;
+    public GameObject optionsMenu;
 
-    public GameObject optionsScreen;
-
-    // Start is called before the first frame update
-    void Start()
+    public void PlayGame()
     {
-        
+        //SceneManager.LoadScene(firstLevel);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void QuitGame ()
     {
-        
+        Application.Quit();
+        Debug.Log("Quit");
     }
 
-    public void StartGame()
-    {
-        SceneManager.LoadScene(firstLevel);
-    }
 
-    //Options Menu Fucntions
+    //Options Menu Functions
     public void OpenOptions()
     {
-        optionsScreen.SetActive(true);
+        optionsMenu.SetActive(true);
     }
 
-    public void CloseOptions ()
+    public void CloseOptions () //back button on options menu
     {
-        optionsScreen.SetActive(false);
+        optionsMenu.SetActive(false);
     }
+
 
     //Help Menu Functions
     public void OpenHelp ()
