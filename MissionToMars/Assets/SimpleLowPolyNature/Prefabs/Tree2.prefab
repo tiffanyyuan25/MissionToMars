@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 108225653781428902}
   - component: {fileID: 108225653780297830}
   - component: {fileID: 8659723387852137529}
-  m_Layer: 0
+  - component: {fileID: 1313534627}
+  m_Layer: 6
   m_Name: Tree2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26,9 +27,10 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108225653778294438}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.9863908, y: 0.9863907, z: 0.9863908}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -52,9 +54,12 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -67,6 +72,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -79,6 +85,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!136 &8659723387852137529
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -93,3 +100,17 @@ CapsuleCollider:
   m_Height: 7.3656607
   m_Direction: 1
   m_Center: {x: -0.017126381, y: 3.6828303, z: -0.014947176}
+--- !u!114 &1313534627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108225653778294438}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1aa52478f244d4d7f939b89c1a72c544, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemData: {fileID: 11400000, guid: ec9e70a0c10c04e5d84662d243857e40, type: 2}
+  _prompt: Wood

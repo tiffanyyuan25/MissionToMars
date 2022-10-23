@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 #endif
 
+// This class handles the input. It is from the third person controller package but modified for our game.
 namespace StarterAssets
 {
 	public class StarterAssetsInputs : MonoBehaviour
