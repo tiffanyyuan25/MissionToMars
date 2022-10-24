@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 23559858}
   - component: {fileID: 23559857}
   m_Layer: 5
-  m_Name: Score
+  m_Name: ScoreText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: ooo'
+  m_text: 'Score: 000'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f5370cf6fc0043118c06812d0412d25, type: 2}
   m_sharedMaterial: {fileID: 1586836853924311344, guid: 2f5370cf6fc0043118c06812d0412d25,
@@ -359,7 +359,7 @@ PrefabInstance:
     - target: {fileID: 2517852515255197158, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -261
+      value: -248
       objectReference: {fileID: 0}
     - target: {fileID: 2517852515255197158, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
@@ -1745,7 +1745,7 @@ GameObject:
   - component: {fileID: 741431900}
   - component: {fileID: 741431899}
   m_Layer: 5
-  m_Name: Title
+  m_Name: TitleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2772,7 +2772,7 @@ PrefabInstance:
     - target: {fileID: 2517852515255197158, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 222
+      value: 235
       objectReference: {fileID: 0}
     - target: {fileID: 2517852515255197158, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
