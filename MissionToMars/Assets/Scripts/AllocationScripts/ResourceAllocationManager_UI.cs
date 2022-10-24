@@ -6,16 +6,24 @@ using UnityEngine.InputSystem;
 
 public class ResourceAllocationManager_UI : MonoBehaviour
 {
-    protected Dictionary<ResourceAllocator_UI, ResourceItemData> itemDictionary;
+    public ResourceAllocator_UI[] allocators;
+    protected Dictionary<ResourceAllocator_UI, ResourceItemData> itemDictionary  = new Dictionary<ResourceAllocator_UI, ResourceItemData>(5);
 
-    public Dictionary<ResourceAllocator_UI, ResourceItemData> SlotDictionary => itemDictionary;
+    public Dictionary<ResourceAllocator_UI, ResourceItemData> ItemDictionary => itemDictionary;
 
     protected void Start()
     {
-
     }
 
-    protected void UpdateSlot(ResourceItemData newItem, int num)
+    public void AssignSlots(ResourceItemData[] items)
+    {
+        for (int i = 0; i < allocators.Length; i++)
+        {
+            itemDictionary[allocators[i]] = items[i];
+        }
+    }
+
+    public void UpdateSlot(ResourceItemData newItem, int num)
     {
         foreach (var item in itemDictionary)
         {
@@ -26,8 +34,4 @@ public class ResourceAllocationManager_UI : MonoBehaviour
         }
     }
 
-    public void SlotClicked(ResourcesSlot_UI clickedSlot)
-    {
-        Debug.Log("Slot clicked");
-    }
 }

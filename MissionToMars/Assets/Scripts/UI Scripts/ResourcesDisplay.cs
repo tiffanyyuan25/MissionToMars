@@ -5,8 +5,6 @@ using UnityEngine.InputSystem;
 
 public abstract class ResourcesDisplay : MonoBehaviour
 {
-    [SerializeField] MouseItemData mouseResourceItem;
-
     protected ResourceSystem resourceSystem;
     protected Dictionary<ResourcesSlot_UI, ResourceSlot> slotDictionary;
 

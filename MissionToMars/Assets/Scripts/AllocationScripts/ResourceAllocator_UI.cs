@@ -12,15 +12,16 @@ public class ResourceAllocator_UI : MonoBehaviour
     [SerializeField] private Button add;
     [SerializeField] private Button subtract;
 
+    public ResourceAllocationMenu_UI GrandparentDisplay { get; private set;}
+
     public ResourceItemData AssignedResourceItem => assignedResourceItem;
-    public ResourceAllocationMenu ParentDisplay { get; private set;}
 
     private void Awake ()
     {
         add?.onClick.AddListener(OnAddClick);
         subtract?.onClick.AddListener(OnSubtractClick);
 
-        ParentDisplay = transform.parent.GetComponent<ResourceAllocationMenu>();
+        GrandparentDisplay = transform.parent.parent.GetComponent<ResourceAllocationMenu_UI>();
     }
 
     public void Init(ResourceItemData item, int num)
@@ -31,12 +32,25 @@ public class ResourceAllocator_UI : MonoBehaviour
     
     private void OnAddClick()
     {
-        Debug.Log("Add");
+        var num = Int16.Parse(itemCount.text);
+        if (GrandparentDisplay.UpdateGlobalAvailable(assignedResourceItem, 1))
+        {
+            itemCount.text = (num + 1).ToString();
+        }
+        
     }
 
     private void OnSubtractClick()
     {
-        Debug.Log("Subtract");
+        int num = Int16.Parse(itemCount.text);
+
+        if (num > 0)
+        {
+            if (GrandparentDisplay.UpdateGlobalAvailable(assignedResourceItem, -1))
+            {
+                itemCount.text = (num - 1).ToString();
+            }
+        }
     }
 
     public void UpdateUISlot (int num) 
