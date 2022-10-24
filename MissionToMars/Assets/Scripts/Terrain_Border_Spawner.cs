@@ -12,8 +12,7 @@ public class Terrain_Border_Spawner : MonoBehaviour
         Debug.Log("[INFO] Generating Outer Terrain...");
         Vector3 position;
         for(int side = 0; side<4; side++)
-        {
-            Debug.Log("[INFO] Testing Here");
+        {           
             for(int i=-borderSize; i<borderSize; i+=2)
             {
                 position = generate_position(i, side);
