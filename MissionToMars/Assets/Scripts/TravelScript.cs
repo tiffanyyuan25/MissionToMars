@@ -5,15 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class TravelScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public int SceneIndex;
+    void OnTriggerEnter(Collider other) {
+        SceneManager.LoadScene(SceneIndex);    
     }
 }
