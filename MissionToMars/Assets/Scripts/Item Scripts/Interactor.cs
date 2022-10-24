@@ -25,11 +25,9 @@ public class Interactor : MonoBehaviour
         if (_numFound > 0)
         {
             var _interactable = _colliders[0].GetComponent<IInteractable>();
-            Debug.Log("It's found some stuff and its trying its best");
 
             if (_interactable != null && Keyboard.current.iKey.wasPressedThisFrame)
             {
-                Debug.Log("It's trying to interact");
                 resourceHolder = GetComponent<ResourceHolder>();
                 _interactable.Interact(this);
             }

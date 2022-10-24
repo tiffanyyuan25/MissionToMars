@@ -9448,6 +9448,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8210548377923341892, guid: 3f999b6beafe9d249bf9c3a91ff26ff6,
         type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8210548377923341892, guid: 3f999b6beafe9d249bf9c3a91ff26ff6,
+        type: 3}
       propertyPath: m_StaticEditorFlags
       value: 126
       objectReference: {fileID: 0}
@@ -9464,6 +9469,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 600047857}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &600047859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8210548377923341892, guid: 3f999b6beafe9d249bf9c3a91ff26ff6,
+    type: 3}
+  m_PrefabInstance: {fileID: 600047857}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &600047860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600047859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d64e4ed8b90a4d48b13e7c94a2be4dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemData: {fileID: 11400000, guid: feac0d9d79aab4d0b8c84dd3295af45d, type: 2}
+  _prompt: Mine Ore
+  _amountOfOre: 8
+  _maxYield: 5
 --- !u!4 &608371587 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 439726086456654667, guid: 9de82d5e406d9d544ac387c521e08a2f,
@@ -9481,6 +9508,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PP_Stone_Crystal_02_Gold
+      objectReference: {fileID: 0}
+    - target: {fileID: 2639654014294276431, guid: a2b21baf50fb023478ee35b93c0c27a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2639654014294566255, guid: a2b21baf50fb023478ee35b93c0c27a1,
         type: 3}
@@ -9554,6 +9586,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2b21baf50fb023478ee35b93c0c27a1, type: 3}
+--- !u!1 &608476337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2639654014294276431, guid: a2b21baf50fb023478ee35b93c0c27a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 608476336}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &608517517
 GameObject:
   m_ObjectHideFlags: 0
@@ -15472,28 +15510,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 982084614}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &984990304 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3781274957288637935, guid: 7dfde7e21eef7db4bace3a599ae2f907,
-    type: 3}
-  m_PrefabInstance: {fileID: 1730283157}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &984990309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984990304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d64e4ed8b90a4d48b13e7c94a2be4dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemData: {fileID: 11400000, guid: feac0d9d79aab4d0b8c84dd3295af45d, type: 2}
-  _prompt: Mine Ore
-  _amountOfOre: 20
-  _maxYield: 10
 --- !u!4 &987177598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4169698474936760176, guid: a8d1317027e9eb24b8544ccf6085320d,
@@ -25111,12 +25127,12 @@ PrefabInstance:
     - target: {fileID: 3781274957288637933, guid: 7dfde7e21eef7db4bace3a599ae2f907,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3781274957288637935, guid: 7dfde7e21eef7db4bace3a599ae2f907,
         type: 3}
       propertyPath: m_Layer
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7dfde7e21eef7db4bace3a599ae2f907, type: 3}
@@ -28635,6 +28651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PP_Stone_Crystal_02_Gold (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2639654014294276431, guid: a2b21baf50fb023478ee35b93c0c27a1,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2639654014294566255, guid: a2b21baf50fb023478ee35b93c0c27a1,
         type: 3}
       propertyPath: m_RootOrder
@@ -28713,6 +28734,28 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1917311998}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1917312000 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2639654014294276431, guid: a2b21baf50fb023478ee35b93c0c27a1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1917311998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1917312001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917312000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d64e4ed8b90a4d48b13e7c94a2be4dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemData: {fileID: 11400000, guid: feac0d9d79aab4d0b8c84dd3295af45d, type: 2}
+  _prompt: Mine Ore
+  _amountOfOre: 8
+  _maxYield: 5
 --- !u!1001 &1919748898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31506,6 +31549,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 608476336}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2102926817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608476337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d64e4ed8b90a4d48b13e7c94a2be4dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ItemData: {fileID: 11400000, guid: feac0d9d79aab4d0b8c84dd3295af45d, type: 2}
+  _prompt: Mine Ore
+  _amountOfOre: 8
+  _maxYield: 5
 --- !u!1001 &2105030063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33127,7 +33186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _interactionPoint: {fileID: 1981501949}
-  _interactionPointRadius: 1
+  _interactionPointRadius: 0.7
   _interactableMask:
     serializedVersion: 2
     m_Bits: 64
