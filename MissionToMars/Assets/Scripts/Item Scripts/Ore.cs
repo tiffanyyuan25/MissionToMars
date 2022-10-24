@@ -19,8 +19,6 @@ public class Ore : MonoBehaviour, IInteractable
         var resource = interactor.ResourceHolder;
         if (!resource) return false;
 
-        Debug.Log("Hello");
-
         int amountToAdd = _maxYield / count;
 
         if (amountToAdd > _amountOfOre)
@@ -30,7 +28,6 @@ public class Ore : MonoBehaviour, IInteractable
 
         if (resource.ResourceSystem.AddToResources(ItemData, amountToAdd))
         {
-            Debug.Log("its trying");
             _amountOfOre -= amountToAdd;
             count += 1;
         }
