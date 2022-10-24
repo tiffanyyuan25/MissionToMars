@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class TownDied : MonoBehaviour
+public class EndingScenes : MonoBehaviour
 {
     public void LoadMenu()
     {
