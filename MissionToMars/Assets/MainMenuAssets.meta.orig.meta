@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:MissionToMars/Assets/CollectableResources.meta
+guid: 50b09c5b0f4fc0a45aa259392f58e443
+folderAsset: yes
+=======
 guid: 4f6cfbcd88a0b4d958905dede28c46aa
+>>>>>>> merge-main-test:MissionToMars/Assets/MainMenuAssets.meta.orig.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
