@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1454, y: -118}
+  m_AnchoredPosition: {x: 1428, y: -118}
   m_SizeDelta: {x: 264.9539, y: 42.783}
   m_Pivot: {x: 0.784079, y: 0.5}
 --- !u!114 &23559857
@@ -395,7 +395,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 377647618}
     - target: {fileID: 2517852515255197159, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -409,7 +409,7 @@ PrefabInstance:
     - target: {fileID: 2517852515255197159, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseMenu, Assembly-CSharp
+      value: MissionSuccessScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2517852515255197159, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 377647616}
   - component: {fileID: 377647615}
   - component: {fileID: 377647614}
-  - component: {fileID: 377647613}
+  - component: {fileID: 377647618}
   m_Layer: 5
   m_Name: Ending Screen
   m_TagString: Untagged
@@ -730,21 +730,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &377647613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 377647612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8d3444b361514980a48784eef9022cc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstLevel: DemoDay
-  optionsMenu: {fileID: 0}
-  helpMenu: {fileID: 0}
 --- !u!114 &377647614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,6 +816,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &377647618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377647612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38f269adfd984fe29ef5fbc40f212d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &379322772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2811,7 +2808,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 377647613}
+      objectReference: {fileID: 377647618}
     - target: {fileID: 2517852515255197159, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -2825,7 +2822,7 @@ PrefabInstance:
     - target: {fileID: 2517852515255197159, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: MainMenu, Assembly-CSharp
+      value: MissionSuccessScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2517852515255197159, guid: dba51d9c873d64abaa2dc5ba3d663ccd,
         type: 3}
@@ -3091,7 +3088,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425886196}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
