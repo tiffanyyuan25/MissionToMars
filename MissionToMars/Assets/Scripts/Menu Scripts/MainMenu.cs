@@ -8,6 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public string firstLevel;
     public GameObject optionsMenu;
+    public GameObject helpMenu;
 
     public void PlayGame()
     {
@@ -37,12 +38,12 @@ public class MainMenu : MonoBehaviour
     //Help Menu Functions
     public void OpenHelp ()
     {
-
+        helpMenu.SetActive(true);
     }
 
     public void CloseHelp ()
     {
-
+        helpMenu.SetActive(false);
     }
 
 }
