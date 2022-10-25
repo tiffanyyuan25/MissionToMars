@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You did not \nLaunch the Mission resources in time."
+  m_text: "You did not \nLaunch the Mission\n in time."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f5370cf6fc0043118c06812d0412d25, type: 2}
   m_sharedMaterial: {fileID: 1586836853924311344, guid: 2f5370cf6fc0043118c06812d0412d25,
