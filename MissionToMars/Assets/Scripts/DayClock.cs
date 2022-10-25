@@ -16,7 +16,7 @@ public class DayClock : MonoBehaviour
     void Update()
     {
         lightSource.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
-        Debug.Log("[INFO] Directional Light Orientation: " + lightSource.transform.rotation);
+        //Debug.Log("[INFO] Directional Light Orientation: " + lightSource.transform.rotation);
         if(lightSource.transform.localRotation.y == 0.64531){
             Debug.Log("[INFO] Game Over --- Day Ended");
         }
