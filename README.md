@@ -1,5 +1,12 @@
 # MissionToMars
 
+Usual controls: WASD/arrows to move, shift to sprint, space to jump
+
+Moving the mouse moves the camera and allows you to look around.
+
+Press escape key to enter pause menu 
+
+
 CREDITS:
 
 ThirdPersonController provided by Unity.
@@ -11,8 +18,3 @@ All art assets are from Unity Asset Store and Kenney.
 Audio files (music and sound effects) are made by a friend of the developers.
 
 
-Usual controls: WASD/arrows to move, shift to sprint, space to jump
-
-Moving the mouse moves the camera and allows you to look around.
-
-Press escape key to enter pause menu 
