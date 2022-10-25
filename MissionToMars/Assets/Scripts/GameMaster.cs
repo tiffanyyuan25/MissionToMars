@@ -11,6 +11,7 @@ public class GameMaster : MonoBehaviour
 
    public static int TownMorale = 100;
    public static int PopulationSize = 100;
+   public static int Score = 0;
 
    public static int DayCounter;
 

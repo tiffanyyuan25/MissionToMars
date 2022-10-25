@@ -11750,7 +11750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   townAllocator: {fileID: 553456110}
   missionAllocator: {fileID: 1735803597}
-  minimumToLaunch: 0000000004000000000000000000000000000000
+  minimumToLaunch: 0200000004000000030000000200000001000000
   resources:
   - {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   - {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
@@ -11762,6 +11762,9 @@ MonoBehaviour:
   hotbar: {fileID: 244204529}
   population: {fileID: 695962405}
   morale: {fileID: 785255425}
+  resourcePadding: 5
+  upperExtraResources: 10
+  lowerExtraResources: 2
 --- !u!1001 &1580203407
 PrefabInstance:
   m_ObjectHideFlags: 0

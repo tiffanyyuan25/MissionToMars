@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -181,7 +181,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "You did not \ncollect enough resources in time."
+  m_text: "You did not \nLaunch the Mission resources in time."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2f5370cf6fc0043118c06812d0412d25, type: 2}
   m_sharedMaterial: {fileID: 1586836853924311344, guid: 2f5370cf6fc0043118c06812d0412d25,

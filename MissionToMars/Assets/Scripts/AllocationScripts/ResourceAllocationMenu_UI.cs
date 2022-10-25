@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -28,6 +29,10 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
 
     public ResourceAllocationManager_UI TownAllocator => townAllocator;
     public ResourceAllocationManager_UI MissionAllocator => missionAllocator;
+
+    public int resourcePadding = 5;
+    public int upperExtraResources = 10;
+    public int lowerExtraResources = 2;
 
     protected void Start()
     {   
@@ -146,7 +151,7 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
     {
         foreach (var res in globalMissionResourceSlots)
         {
-            if (res.Value > (minDict[res.Key] + 5))
+            if (res.Value > (minDict[res.Key] + resourcePadding))
             {
                 GameMaster.PopulationSize -= res.Key.PopulationImpact;
                 GameMaster.TownMorale -= res.Key.MoraleImpact;
@@ -161,7 +166,7 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
 
         if (GameMaster.DayCounter == 5)
         {
-            //TO DO: change to end Scene
+            SceneManager.LoadScene("Scenes/EndingScenes/NoTimeLessResources");
         } else 
         {
             GameMaster.DayCounter += 1;
@@ -172,6 +177,41 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
 
     public void OnLaunchClicked()
     {
-        //TO DO: change to ending based on calculations
+        string[] food = {"Cabbage", "Tomato", "Root Vegetable"};
+        int extra;
+        foreach (var res in resources)
+        {
+            extra = Random.Range(lowerExtraResources, upperExtraResources);
+
+            if (globalMissionResourceSlots[res] < extra)
+            {
+                if (food.Contains(res.DisplayName))
+                {
+                    SceneManager.LoadScene("Scenes/EndingScenes/LessFood");
+                } else 
+                {
+                    SceneManager.LoadScene("Scenes/EndingScenes/LessOre");
+                }
+            }
+
+            if (globalMissionResourceSlots[res] > (extra*2))
+            {
+                SceneManager.LoadScene("Scenes/EndingScenes/TownDied");
+            }
+        }
+
+        foreach (var res in globalMissionResourceSlots)
+        {
+            if (res.Value > (minDict[res.Key] + resourcePadding))
+            {
+                GameMaster.PopulationSize -= res.Key.PopulationImpact;
+                GameMaster.TownMorale -= res.Key.MoraleImpact;
+            }
+        }
+
+        GameMaster.Score = GameMaster.PopulationSize + GameMaster.TownMorale;
+
+        SceneManager.LoadScene("Scenes/EndingScenes/MissionSuccess");
+
     }
 }

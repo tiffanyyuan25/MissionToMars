@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571336, b: 0.3069219, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -723,6 +723,7 @@ GameObject:
   - component: {fileID: 377647615}
   - component: {fileID: 377647614}
   - component: {fileID: 377647618}
+  - component: {fileID: 377647619}
   m_Layer: 5
   m_Name: Ending Screen
   m_TagString: Untagged
@@ -828,6 +829,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56df9def759eb41f8ad97c7f53056648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &377647619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 377647612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0121a2a24df647428dd33448e9acbcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreField: {fileID: 23559857}
+  defaultMessage: 'Score: '
 --- !u!1001 &379322772
 PrefabInstance:
   m_ObjectHideFlags: 0
