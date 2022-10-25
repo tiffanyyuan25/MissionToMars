@@ -25,6 +25,7 @@ public class PlayerSaveData : MonoBehaviour
         //myData.PlayerRotation = transform.rotation;  
         myData.inventory = RetrieveItems(gameObject.GetComponent<ResourceHolder>().ResourceSystem);        
         SaveGameManager.CurrentSaveData.playerData = myData;
+        Debug.Log("[INFO] Game Data saving....");
     }
 
     private ResourceSlot[] RetrieveItems(ResourceSystem inventory){
