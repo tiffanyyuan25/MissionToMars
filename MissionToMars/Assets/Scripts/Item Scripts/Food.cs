@@ -6,6 +6,7 @@ public class Food : MonoBehaviour, IInteractable
 {
     public ResourceItemData ItemData;
     [SerializeField] private string _prompt;
+    private AudioSource _audioSource;
 
     public string InteractionPrompt => _prompt;
 
@@ -16,9 +17,22 @@ public class Food : MonoBehaviour, IInteractable
 
         if (resource.ResourceSystem.AddToResources(ItemData, 1))
         {
+            if (_audioSource == null)
+            {
+                Debug.LogError( "The AudioSource in the player NULL!");
+            } else {
+                _audioSource.Play();
+                Debug.Log(_audioSource.clip);
+            }
+
             this.gameObject.SetActive(false);
         }
 
         return true;
+    }
+
+    public void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
     }
 }
