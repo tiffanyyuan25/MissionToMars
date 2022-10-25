@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Root Vegetable
   Icon: {fileID: 496055018, guid: 40e61d2a077a146dbbaf479fd25cda2a, type: 3}
+  MoraleImpact: 0
+  PopulationImpact: 2

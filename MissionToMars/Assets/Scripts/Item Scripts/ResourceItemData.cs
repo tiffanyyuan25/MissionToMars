@@ -7,4 +7,7 @@ public class ResourceItemData : ScriptableObject
 {
     public string DisplayName;
     public Sprite Icon;
+
+    public int MoraleImpact;
+    public int PopulationImpact;
 }
