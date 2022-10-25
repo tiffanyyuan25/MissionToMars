@@ -6,4 +6,5 @@ using UnityEngine;
 public class SaveData
 {
     public PlayerData playerData = new PlayerData();
+    
 }
