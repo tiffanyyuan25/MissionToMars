@@ -179,39 +179,52 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
     {
         string[] food = {"Cabbage", "Tomato", "Root Vegetable"};
         int extra;
+        bool success = true;
+
         foreach (var res in resources)
         {
             extra = Random.Range(lowerExtraResources, upperExtraResources);
+            Debug.Log(extra);
+            Debug.Log(globalMissionResourceSlots[res]);
 
             if (globalMissionResourceSlots[res] < extra)
             {
                 if (food.Contains(res.DisplayName))
                 {
+                    success = false;
                     SceneManager.LoadScene("Scenes/EndingScenes/LessFood");
+                    break;
                 } else 
                 {
+                    success = false;
                     SceneManager.LoadScene("Scenes/EndingScenes/LessOre");
+                    break;
                 }
             }
 
             if (globalMissionResourceSlots[res] > (extra*2))
             {
+                success = false;
                 SceneManager.LoadScene("Scenes/EndingScenes/TownDied");
+                break;
             }
         }
 
-        foreach (var res in globalMissionResourceSlots)
+        if (success)
         {
-            if (res.Value > (minDict[res.Key] + resourcePadding))
+            foreach (var res in globalMissionResourceSlots)
             {
-                GameMaster.PopulationSize -= res.Key.PopulationImpact;
-                GameMaster.TownMorale -= res.Key.MoraleImpact;
+                if (res.Value > (minDict[res.Key] + resourcePadding))
+                {
+                    GameMaster.PopulationSize -= res.Key.PopulationImpact;
+                    GameMaster.TownMorale -= res.Key.MoraleImpact;
+                }
             }
+
+            GameMaster.Score = GameMaster.PopulationSize + GameMaster.TownMorale;
+
+            SceneManager.LoadScene("Scenes/EndingScenes/MissionSuccess");
         }
-
-        GameMaster.Score = GameMaster.PopulationSize + GameMaster.TownMorale;
-
-        SceneManager.LoadScene("Scenes/EndingScenes/MissionSuccess");
 
     }
 }
