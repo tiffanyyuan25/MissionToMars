@@ -6820,7 +6820,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc23624c4a80f47eaa7808dc5f36a865, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseResourceItem: {fileID: 0}
   resourceHolder: {fileID: 7685036727999816287}
   slots:
   - {fileID: 6460126753965191377}

@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Cabbage
   Icon: {fileID: 1089640656, guid: 67ef0fa07663e43abbd6fdefc3462fa7, type: 3}
+  MoraleImpact: 1
+  PopulationImpact: 1

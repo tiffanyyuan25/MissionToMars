@@ -39,7 +39,7 @@ public class ResourcesSlot_UI : MonoBehaviour
             itemSprite.sprite = slot.ItemData.Icon;
             itemSprite.color = Color.white;
 
-            if (slot.NumItems > 1) itemCount.text = slot.NumItems.ToString();
+            if (slot.NumItems != 1) itemCount.text = slot.NumItems.ToString();
             else itemCount.text = "";
         }
         else

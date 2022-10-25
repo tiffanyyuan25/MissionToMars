@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DisplayName: Tomato
   Icon: {fileID: -2135184548, guid: dc2a55be6ad5341139300563c04deeb3, type: 3}
+  MoraleImpact: 1
+  PopulationImpact: 1

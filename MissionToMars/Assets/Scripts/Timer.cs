@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
-   public static float timeLeft = 5.0f;
+   public float timeLeft = 10f;
    [SerializeField] private ResourceHolder resourceHolder;
 
    public void Update()

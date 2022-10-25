@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class ResourceAllocationManager_UI : MonoBehaviour
 {
+    public bool missionAllocator;
     public ResourceAllocator_UI[] allocators;
     protected Dictionary<ResourceAllocator_UI, ResourceItemData> itemDictionary  = new Dictionary<ResourceAllocator_UI, ResourceItemData>(5);
 

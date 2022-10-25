@@ -26,8 +26,6 @@ public class Ore : MonoBehaviour, IInteractable
             amountToAdd = _amountOfOre;
         }
 
-        Debug.Log("About to Interact");
-
         if (resource.ResourceSystem.AddToResources(ItemData, amountToAdd))
         {
             _amountOfOre -= amountToAdd;

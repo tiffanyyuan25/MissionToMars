@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class GameMaster : MonoBehaviour
 {
-   public static Dictionary<ResourceItemData, int> globalAvailableResourceSlots = new Dictionary<ResourceItemData, int>(5); 
-
-   public static Dictionary<ResourceItemData, int> globalTownResourceSlots; 
-   public static Dictionary<ResourceItemData, int> globalMissionResourceSlots; 
+   public static GameMaster instance;
+   public static Dictionary<ResourceItemData, int> globalAvailableResourceSlots = new Dictionary<ResourceItemData, int>(5);
+   public static Dictionary<ResourceItemData, int> globalTownResourceSlots = new Dictionary<ResourceItemData, int>(5); 
+   public static Dictionary<ResourceItemData, int> globalMissionResourceSlots = new Dictionary<ResourceItemData, int>(5); 
 
    public static int TownMorale = 100;
-
    public static int PopulationSize = 100;
+
+   public static int DayCounter;
 
    public static bool CheckAvailableValues() {
       bool result = true;
@@ -27,4 +28,5 @@ public class GameMaster : MonoBehaviour
 
       return result;
    }
+
 }
