@@ -4,28 +4,30 @@ using UnityEngine;
 
 public class PlayerSaveData : MonoBehaviour
 {
+    public Light lightSource;
     private PlayerData myData = new PlayerData();
+    private DayClockData clockData = new DayClockData();
     private static ResourceSystem tempInventory;
-    
-    // Update is called once per frame
+        
     private void Start() {
         Debug.Log("[INFO] Loading in inventory...");
         SaveGameManager.LoadGame();
-        myData = SaveGameManager.CurrentSaveData.playerData;
-        //LoadResources(myData.inventory);
+        myData = SaveGameManager.CurrentSaveData.playerData;        
         foreach (var resource in myData.inventory){
             gameObject.GetComponent<ResourceHolder>().ResourceSystem.AddToResources(resource.ItemData, resource.NumItems);
         }
-        //gameObject.GetComponent<ResourceHolder>().ResourceSystem = tempInventory;
+        clockData = SaveGameManager.CurrentSaveData.lightData;
+        lightSource.transform.rotation = clockData.LightOrientation;        
     }
 
+    // Update is called once per frame
     void Update()
-    {        
-        //myData.PlayerPosition = transform.position;
-        //myData.PlayerRotation = transform.rotation;  
-        myData.inventory = RetrieveItems(gameObject.GetComponent<ResourceHolder>().ResourceSystem);        
-        SaveGameManager.CurrentSaveData.playerData = myData;
-        Debug.Log("[INFO] Game Data saving....");
+    {                 
+        myData.inventory = RetrieveItems(gameObject.GetComponent<ResourceHolder>().ResourceSystem);
+        clockData.LightOrientation = lightSource.transform.rotation;
+        SaveGameManager.CurrentSaveData.playerData = myData;   
+        SaveGameManager.CurrentSaveData.lightData = clockData;     
+        //Debug.Log("[INFO] Game Data saving....");
     }
 
     private ResourceSlot[] RetrieveItems(ResourceSystem inventory){
@@ -45,8 +47,12 @@ public class PlayerSaveData : MonoBehaviour
 
 [System.Serializable]
 public struct PlayerData
-{
-    //public Vector3 PlayerPosition;
-    //public Quaternion PlayerRotation;
+{   
     public ResourceSlot[] inventory;    
+}
+
+[System.Serializable]
+public struct DayClockData
+{
+    public Quaternion LightOrientation;
 }

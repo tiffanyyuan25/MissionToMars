@@ -18,8 +18,7 @@ public static class SaveGameManager
 
         if(!Directory.Exists(dir)){
             Directory.CreateDirectory(dir);            
-        }
-        //RetrieveResources(CurrentSaveData.playerData.inventory);        
+        }        
         string json = JsonUtility.ToJson(CurrentSaveData, true);
         File.WriteAllText(dir + FileName, json);
         Debug.Log("[INFO] Game Save File paths: " + dir);
