@@ -30,6 +30,11 @@ Developed the main menu using and connecting menu screens using:
 - https://www.youtube.com/watch?v=zc8ac_qUXQY
 - https://www.youtube.com/watch?v=76WOa6IU_s8
 
+Developed the Terrain using these tutorials:
+- https://www.youtube.com/watch?v=Q88f4u9mKqQ
+- https://www.youtube.com/watch?v=MWQv2Bagwgk&t=152s
 
-
+Developed Saving Mechanics using these tutorials and resources:
+- https://www.youtube.com/watch?v=f1cqInqB9qk&list=PPSV
+- https://docs.unity3d.com/Manual/ScriptingSection.html
 
