@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 99cb8467193e64212ba59f8b6ddb3007,
+  m_LightingDataAsset: {fileID: 112000000, guid: 6d79b856c93cbf848b0612c8330f3cdb,
     type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 39487bd188a174eaf81e831f82c80363,
     type: 2}
@@ -38849,6 +38849,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1940115119}
   - component: {fileID: 1940115118}
+  - component: {fileID: 1940115120}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -38925,7 +38926,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1940115117}
-  m_LocalRotation: {x: 0.37419048, y: -0.80356103, z: 0.092741996, w: 0.45350876}
+  m_LocalRotation: {x: 0.37418842, y: -0.80356395, z: 0.09274022, w: 0.45350564}
   m_LocalPosition: {x: 0.88, y: 23.55, z: -13.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -38933,6 +38934,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 29.238, y: -130.912, z: -36.354}
+--- !u!114 &1940115120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940115117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48476644955a8564f935b614ff09a1ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightSource: {fileID: 0}
+  xAngle: 0
+  yAngle: 1
+  zAngle: 0
 --- !u!1001 &1943706260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43759,6 +43776,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2372fa9e893ec246b19a52ed394da33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lightSource: {fileID: 1940115118}
 --- !u!1001 &8730119247996590798
 PrefabInstance:
   m_ObjectHideFlags: 0
