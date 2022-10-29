@@ -9,7 +9,7 @@ public class PlayerSaveData : MonoBehaviour
     
     // Update is called once per frame
     private void Start() {
-        Debug.Log("[INFO] Loading in inventory...");
+        //Debug.Log("[INFO] Loading in inventory...");
         SaveGameManager.LoadGame();
         myData = SaveGameManager.CurrentSaveData.playerData;
         //LoadResources(myData.inventory);
@@ -25,7 +25,7 @@ public class PlayerSaveData : MonoBehaviour
         //myData.PlayerRotation = transform.rotation;  
         myData.inventory = RetrieveItems(gameObject.GetComponent<ResourceHolder>().ResourceSystem);        
         SaveGameManager.CurrentSaveData.playerData = myData;
-        Debug.Log("[INFO] Game Data saving....");
+        //Debug.Log("[INFO] Game Data saving....");
     }
 
     private ResourceSlot[] RetrieveItems(ResourceSystem inventory){
