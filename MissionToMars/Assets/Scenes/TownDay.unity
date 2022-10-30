@@ -2360,6 +2360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!1001 &110731742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3915,6 +3916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!1001 &162343771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4115,6 +4117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
+  _audioClip: {fileID: 0}
 --- !u!1001 &166926675
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4862,6 +4865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!4 &202963403 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4351688707098611488, guid: 7636ce4d333d86b4f9da6559a4d8399a,
@@ -6364,6 +6368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!1001 &253979254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6464,32 +6469,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
---- !u!1 &266687825 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2906742830765859135, guid: 78da2ace1ab76ce478600ebe37fa10fe,
-    type: 3}
-  m_PrefabInstance: {fileID: 1654446650}
-  m_PrefabAsset: {fileID: 0}
+  _audioClip: {fileID: 0}
 --- !u!4 &266687826 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2906742830765571359, guid: 78da2ace1ab76ce478600ebe37fa10fe,
     type: 3}
   m_PrefabInstance: {fileID: 1654446650}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &266687827
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266687825}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e5a7c8c824c40c29771d66dd5f28dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
-  _prompt: Tomato
 --- !u!1001 &274238607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10937,6 +10923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!1001 &499944906
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11114,11 +11101,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roots_1
       objectReference: {fileID: 0}
-    - target: {fileID: 6662174415517180126, guid: 81dad7d5552c9a341b390c79338fe0a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6662174415517613310, guid: 81dad7d5552c9a341b390c79338fe0a4,
         type: 3}
       propertyPath: m_RootOrder
@@ -11182,26 +11164,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 513013113}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &513956844 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6662174415517180126, guid: 81dad7d5552c9a341b390c79338fe0a4,
-    type: 3}
-  m_PrefabInstance: {fileID: 513013113}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &513956848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513956844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e5a7c8c824c40c29771d66dd5f28dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
-  _prompt: Root Vegetable
 --- !u!1001 &514688873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12199,6 +12161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
+  _audioClip: {fileID: 0}
 --- !u!1001 &574933358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12294,12 +12257,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 597308369130767402, guid: 2f7f3dde7ae722a4aafffe20691ad702,
     type: 3}
   m_PrefabInstance: {fileID: 6335068177615603923}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &579178120 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8554979865545778643, guid: aec8969d0290c6d4cbc587ef85a01ce4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1543872153}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &580199778
 PrefabInstance:
@@ -12987,102 +12944,7 @@ MonoBehaviour:
   _prompt: Mine Ore
   _amountOfOre: 8
   _maxYield: 5
---- !u!82 &600047861
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600047859}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 58626367a35e64ffcabe5d52f28790d8, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
+  _audioClip: {fileID: 8300000, guid: 58626367a35e64ffcabe5d52f28790d8, type: 3}
 --- !u!1001 &604090100
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13346,7 +13208,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4381967640640723432, guid: a2b21baf50fb023478ee35b93c0c27a1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2b21baf50fb023478ee35b93c0c27a1, type: 3}
 --- !u!1 &608476337 stripped
 GameObject:
@@ -13510,7 +13373,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75cf4fd74ed84442c9b9a1b3395b8493, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeLeft: 300
+  timeLeft: 100
   resourceHolder: {fileID: 7685036727999816287}
 --- !u!1 &612746144 stripped
 GameObject:
@@ -13538,6 +13401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
+  _audioClip: {fileID: 0}
 --- !u!1001 &614653985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16187,6 +16051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
+  _audioClip: {fileID: 0}
 --- !u!1001 &733438093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16388,6 +16253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!1001 &736700435
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19372,6 +19238,7 @@ MonoBehaviour:
   _prompt: Mine Ore
   _amountOfOre: 8
   _maxYield: 5
+  _audioClip: {fileID: 0}
 --- !u!1001 &904635318
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22394,6 +22261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!4 &1085337318 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2070925441746177912, guid: a1a802ecaf6775746bb2a929fb554ad8,
@@ -23003,6 +22871,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!1 &1119575400
 GameObject:
   m_ObjectHideFlags: 19
@@ -23054,6 +22923,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!1001 &1127173440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24434,6 +24304,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
+  _audioClip: {fileID: 0}
 --- !u!1 &1195621256
 GameObject:
   m_ObjectHideFlags: 0
@@ -26007,6 +25878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!4 &1260945568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5206183479118261842, guid: 96d41c598e0118d4e8684be3e2d7effb,
@@ -26907,6 +26779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!4 &1321495828 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7413659883413353598, guid: 9380f34c10f5fe34e863c769353585c0,
@@ -31279,11 +31152,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabbage_01_1
       objectReference: {fileID: 0}
-    - target: {fileID: 8554979865545778643, guid: aec8969d0290c6d4cbc587ef85a01ce4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 8554979865546078707, guid: aec8969d0290c6d4cbc587ef85a01ce4,
         type: 3}
       propertyPath: m_RootOrder
@@ -31347,20 +31215,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1543872153}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1543872158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579178120}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62e5a7c8c824c40c29771d66dd5f28dd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
-  _prompt: Cabbage
 --- !u!1001 &1547660666
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33076,11 +32930,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TomatoPlant_01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2906742830765859135, guid: 78da2ace1ab76ce478600ebe37fa10fe,
-        type: 3}
-      propertyPath: m_Layer
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78da2ace1ab76ce478600ebe37fa10fe, type: 3}
@@ -35251,6 +35100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!1 &1798138270 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: eaac711c8733edd43828a7a4976ee8f8,
@@ -37200,6 +37050,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 622b724ae45c34e4fa84e3f3018cbc53, type: 2}
   _prompt: Root Vegetable
+  _audioClip: {fileID: 0}
 --- !u!1001 &1885123933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38120,7 +37971,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -11.245
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4381967640640723432, guid: a2b21baf50fb023478ee35b93c0c27a1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a2b21baf50fb023478ee35b93c0c27a1, type: 3}
 --- !u!4 &1917311999 stripped
 Transform:
@@ -38150,6 +38002,7 @@ MonoBehaviour:
   _prompt: Mine Ore
   _amountOfOre: 8
   _maxYield: 5
+  _audioClip: {fileID: 8300000, guid: 58626367a35e64ffcabe5d52f28790d8, type: 3}
 --- !u!1001 &1919748898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40488,6 +40341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: c1cc30b2467154732abf18752345edbd, type: 2}
   _prompt: Tomato
+  _audioClip: {fileID: 0}
 --- !u!1001 &2020043616
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41892,6 +41746,7 @@ MonoBehaviour:
   _prompt: Mine Ore
   _amountOfOre: 8
   _maxYield: 5
+  _audioClip: {fileID: 8300000, guid: 58626367a35e64ffcabe5d52f28790d8, type: 3}
 --- !u!1001 &2105030063
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42025,6 +41880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemData: {fileID: 11400000, guid: 640de4d59350244149534caff835820d, type: 2}
   _prompt: Cabbage
+  _audioClip: {fileID: 0}
 --- !u!1001 &2117988658
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43850,7 +43706,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 016ccf423cbd0fe4b8298cf6424605b8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0c6e0ba9107ce4922b8513e35d68e7aa, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.5
   m_Pitch: 1

@@ -8,8 +8,7 @@ public class Ore : MonoBehaviour, IInteractable
     [SerializeField] private string _prompt;
     [SerializeField] private int _amountOfOre;
     [SerializeField] private int _maxYield;
-
-    private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
 
     private int count = 1;
 
@@ -30,11 +29,11 @@ public class Ore : MonoBehaviour, IInteractable
 
         if (resource.ResourceSystem.AddToResources(ItemData, amountToAdd))
         {
-            if (_audioSource == null)
+            if (_audioClip == null)
             {
                 Debug.LogError( "The AudioSource in the player NULL!");
             } else {
-                _audioSource.Play();
+                AudioSource.PlayClipAtPoint(_audioClip, transform.position);
             }
             
             _amountOfOre -= amountToAdd;
@@ -42,10 +41,5 @@ public class Ore : MonoBehaviour, IInteractable
         }
 
         return true;
-    }
-
-    public void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
     }
 }

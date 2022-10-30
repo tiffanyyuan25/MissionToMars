@@ -6,7 +6,7 @@ public class Wood : MonoBehaviour, IInteractable
 {
     public ResourceItemData ItemData;
     [SerializeField] private string _prompt;
-    private AudioSource _audioSource;
+    [SerializeField] private AudioClip _audioClip;
 
     public string InteractionPrompt => _prompt;
 
@@ -17,21 +17,16 @@ public class Wood : MonoBehaviour, IInteractable
 
         if (resource.ResourceSystem.AddToResources(ItemData, 1))
         {
-            if (_audioSource == null)
+            if (_audioClip == null)
             {
                 Debug.LogError( "The AudioSource in the player NULL!");
             } else {
-                _audioSource.Play();
+                AudioSource.PlayClipAtPoint(_audioClip, transform.position);
             }
-            
-            this.gameObject.SetActive(false);
+
+            Destroy(this.gameObject);
         }
 
         return true;
-    }
-
-    public void Start()
-    {
-        _audioSource = GetComponent<AudioSource>();
     }
 }

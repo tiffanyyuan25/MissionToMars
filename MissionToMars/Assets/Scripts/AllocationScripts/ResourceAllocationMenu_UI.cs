@@ -25,6 +25,8 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI population;
     [SerializeField] private TextMeshProUGUI morale;
 
+    [SerializeField] private AudioClip launchClip;
+
     private Dictionary<ResourceItemData, int> minDict;
 
     public ResourceAllocationManager_UI TownAllocator => townAllocator;
@@ -158,6 +160,12 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
             }
         }
 
+        if (GameMaster.PopulationSize < 10)
+        {
+            SceneManager.LoadScene("Scenes/EndingScenes/TownDied");
+            return;
+        }
+
         foreach (ResourceItemData resource in resources)
         {
             GameMaster.globalTownResourceSlots[resource] = globalTownResourceSlots[resource];
@@ -177,6 +185,8 @@ public class ResourceAllocationMenu_UI : MonoBehaviour
 
     public void OnLaunchClicked()
     {
+        AudioSource.PlayClipAtPoint(launchClip, transform.position);
+
         string[] food = {"Cabbage", "Tomato", "Root Vegetable"};
         int extra;
         bool success = true;
